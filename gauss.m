@@ -9,5 +9,6 @@ function [x,A,b] = gauss(A,b)
          b(i) = b(i) + Lik*b(k);
       end
    end
+   # substituição de baixo para cima em uma matriz triangular superior
    x = backwardsub(A,b);
 end
