@@ -1,6 +1,6 @@
 function x = backwardsub(A,b)
    n = length(b);
-   x = zeros(n,1);
+   x = vpa(zeros(n,1));
    for i = n:-1:1
       x(i) = b(i);
       for j = i+1:n
