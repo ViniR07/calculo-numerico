@@ -4,7 +4,6 @@ function [x,A,b] = gaussPivotP(A,b)
       [A,b] = pivoting(A,b,n,k);
       for i=k+1:n
          Lik = -A(i,k)/A(k,k);
-         Lik
          for j=1:n
             A(i,j) = A(i,j) + Lik*A(k,j);
          end
