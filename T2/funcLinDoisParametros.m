@@ -3,7 +3,7 @@ function [x] = funcLinDoisParametros(y, ga, gb)
   A = zeros(2, 2);
   b = zeros(2, 1);
   
-  # Inicializando as variáveis dos somatórios
+  # Inicializando as variáveis dos somatórios (produtos internos)
   gaga = 0;
   gagb = 0;
   gbgb = 0;
