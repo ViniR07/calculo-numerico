@@ -19,6 +19,7 @@ Serão realizados, ao todo, 6 conjuntos de trabalhos, um para cada matéria da d
 
 - [`Trabalhos 1` `Sistemas Lineares`](https://github.com/vinimrs/calculo-numerico/tree/master/sistemas-lineares): consiste em implementar algoritmos computacionais para resolver sistemas lineares, tanto pelos métodos diretos, quanto pelos iterativos.
 - [`Trabalhos 2` `Ajuste de Funções`](https://github.com/vinimrs/calculo-numerico/tree/master/ajuste-funcoes): consiste em implementar algoritmos computacionais aproximar funções.
+- [`Trabalhos 3` `Zero de Funções`](https://github.com/vinimrs/calculo-numerico/tree/master/zero-funcoes): consiste em implementar algoritmos computacionais para encontrar aproximações para as raízes de funções.
 
 ## :zap: Tecnologias
 
