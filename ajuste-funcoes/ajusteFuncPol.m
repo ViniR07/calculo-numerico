@@ -25,7 +25,7 @@ function [a, p] = ajusteFuncPol(y, p0, p1, p2, p3, c, d)
   alpha3 = yp3/p3p3
 
   p = @(x) alpha0 .* p0(x) + alpha1 .* p1(x) + alpha2 .* p2(x) + alpha3 .* p3(x);
-  p1 = sym(p);
+  p1 = p;
   a = coeffs(p1);
 
 end
