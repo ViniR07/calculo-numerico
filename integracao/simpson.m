@@ -6,7 +6,7 @@ function [r] = simpson(a, b, f, lim, showSteps = false)
   # lim = limite de iterações
   # r = resultado
 
-  printf("Método de Simpson\n")
+  # printf("Método de Simpson\n")
   r = 0;
   for i = 1:lim
     n2 = 2*i;
