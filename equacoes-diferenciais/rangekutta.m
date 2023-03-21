@@ -1,7 +1,6 @@
-function [y] = rangekutta(f, T, n, ordem, y0)
+function [yn] = rangekutta(f, T, n, ordem, y0)
 
   h = T/n;
-  h
   t = [];
   j = 1;
   t(j) = 0;
@@ -22,7 +21,7 @@ function [y] = rangekutta(f, T, n, ordem, y0)
     elseif ((ordem == 3))
       e1 = f(t(k), y(k));
       e2 = f(t(k) + h/2, y(k) + (h/2)*e1);
-      e3 = f(t(k) + h, y(k) + 3/4 * h * e2);
+      e3 = f(t(k) + h*(3/4), y(k) + 3/4 * h * e2);
       y(k+1) = y(k) + (h/9)*(2*e1 + 3*e2 + 4*e3);
 
     elseif ((ordem == 4))
@@ -34,7 +33,9 @@ function [y] = rangekutta(f, T, n, ordem, y0)
     
     endif
 
-    printf("y(%.2f) = %.16f, n = %d\n", t(k), y(k), k);
+    % printf("y(%.2f) = %.16f, n = %d\n", t(k), y(k), k);
   endfor
 
+  yn = y(n+1);
+  printf("y(n = %d) = %.12f\n", n, yn);
 end
